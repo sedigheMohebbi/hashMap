@@ -8,6 +8,7 @@ public class MainStudentAverageSorter {
         stringIntegerHashMap.put("student1",12);
         stringIntegerHashMap.put("student2",14);
         stringIntegerHashMap.put("student3",15);
+        stringIntegerHashMap.put("student4",18);
 
         StudentAverageSorter studentAverageSorter = new StudentAverageSorter();
         System.out.println( "list of average : "+studentAverageSorter.sorByAverage(stringIntegerHashMap));
