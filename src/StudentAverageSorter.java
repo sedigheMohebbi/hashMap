@@ -10,9 +10,8 @@ public class StudentAverageSorter {
         for (Map.Entry<String, Integer> stringIntegerEntry : studentAverageMap.entrySet()) {
             String key = stringIntegerEntry.getKey();
             Integer value = stringIntegerEntry.getValue();
-            Student student=new Student(key,value);
+            Student student = new Student(key, value);
             studentList.add(student);
-
         }
         Collections.sort(studentList);
         Collections.reverse(studentList);
