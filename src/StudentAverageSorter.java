@@ -2,10 +2,10 @@ import java.util.*;
 
 
 public class StudentAverageSorter {
-    public List sorByAverage(HashMap<String, Integer> studentAverageMap) {
+    public List sortByAverage(HashMap<String, Integer> studentAverage) {
         ArrayList<Student> studentList = new ArrayList<Student>();
 
-        for (Map.Entry<String, Integer> stringIntegerEntry : studentAverageMap.entrySet()) {
+        for (Map.Entry<String, Integer> stringIntegerEntry : studentAverage.entrySet()) {
             String key = stringIntegerEntry.getKey();
             Integer value = stringIntegerEntry.getValue();
             Student student = new Student(key, value);
