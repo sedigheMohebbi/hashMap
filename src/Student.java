@@ -26,7 +26,7 @@ public class Student implements Comparable<Student > {
 
     @Override
     public int compareTo(Student student) {
-        return (-1) *this.getAverage().compareTo(student.getAverage());
+        return  this.getAverage().compareTo(student.getAverage());
     }
     public String toString(){
         return getName()+" "+getAverage();
