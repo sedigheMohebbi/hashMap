@@ -1,5 +1,5 @@
 
-public class Student implements Comparable<Student > {
+public class Student implements Comparable<Student> {
     private String name;
     private Integer Average;
 
@@ -28,8 +28,9 @@ public class Student implements Comparable<Student > {
     public int compareTo(Student student) {
         return this.getAverage().compareTo(student.getAverage());
     }
-    public String toString(){
-        return getName()+" "+getAverage();
+
+    public String toString() {
+        return getName() + " " + getAverage();
     }
 
 }
