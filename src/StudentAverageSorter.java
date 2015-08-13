@@ -11,7 +11,8 @@ public class StudentAverageSorter {
             Student student = new Student(key, value);
             studentList.add(student);
         }
-         Collections.sort(studentList);
+         Collections.sort(studentList,Collections.reverseOrder());
+
         return studentList;
 
     }
