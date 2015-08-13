@@ -5,7 +5,7 @@ import java.util.List;
 
 public class MainStudentAverageSorter {
     public static void main(String[] args) {
-        HashMap<String, Integer> stringIntegerHashMap = new HashMap<String, Integer>();
+        HashMap<String,Integer> stringIntegerHashMap = new HashMap<String, Integer>();
         stringIntegerHashMap.put("student1", 1);
         stringIntegerHashMap.put("student2", 18);
         stringIntegerHashMap.put("student3", 15);
