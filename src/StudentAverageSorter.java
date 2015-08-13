@@ -5,17 +5,18 @@ import java.util.*;
  */
 public class StudentAverageSorter {
     public List sorByAverage(HashMap<String, Integer> studentAverageMap) {
-        ArrayList<Integer> avrageList = new ArrayList<Integer>();
+        ArrayList<Student> studentList = new ArrayList<Student>();
 
         for (Map.Entry<String, Integer> stringIntegerEntry : studentAverageMap.entrySet()) {
             String key = stringIntegerEntry.getKey();
             Integer value = stringIntegerEntry.getValue();
-            avrageList.add(value);
+            Student student=new Student(key,value);
+            studentList.add(student);
 
         }
-        Collections.sort(avrageList);
-        Collections.reverse(avrageList);
-        return avrageList;
+        Collections.sort(studentList);
+        Collections.reverse(studentList);
+        return studentList;
 
     }
 }

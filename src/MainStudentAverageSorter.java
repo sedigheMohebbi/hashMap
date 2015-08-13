@@ -1,5 +1,7 @@
 
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
 
 // project hashmap test
 public class MainStudentAverageSorter {
@@ -11,8 +13,11 @@ public class MainStudentAverageSorter {
         stringIntegerHashMap.put("student4",18);
 
         StudentAverageSorter studentAverageSorter = new StudentAverageSorter();
-        System.out.println( "list of average : "+studentAverageSorter.sorByAverage(stringIntegerHashMap));
-
+        List studentList= studentAverageSorter.sorByAverage(stringIntegerHashMap);
+        Iterator iterator=studentList.iterator();
+        while (iterator.hasNext()) {
+            System.out.println("list of average :\n " +iterator.next());
+        }
 
     }
 }
